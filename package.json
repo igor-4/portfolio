@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-4/portfolio.git"
+  },
+  "author": "Cherniakov Igor rosamaha13@rambler.ru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-4/portfolio/issues"
+  },
+  "homepage": "https://github.com/igor-4/portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Cherniakov Igor rosamaha13@rambler.ru"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/igor-4/portfolio",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.12.0",
+    "normalize-css": "normalize.css#~3.0.3",
+    "jquery-placeholder": "2.1.3",
+    "modernizr": "2.8.3"
+  }
+}
