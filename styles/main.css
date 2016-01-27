@@ -63,6 +63,11 @@ body {
 	width: 100%;
 }
 
+.main-header .logo-text {
+	text-indent: -9999px;
+	margin: 0;
+}
+
 .header-logo a {
 	display: block;
 }
@@ -475,6 +480,110 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9a7a7', end
 	background: url(../pict/big-box-sprite.png) no-repeat -15% 97%;
 }
 
+
+/*-----MY WORKS PAGE------*/
+/*----------------------------*/
+		/*--------*/
+.box .all-works {
+	width: 100%;
+	list-style-type: none;
+}
+
+.all-works .some-work {
+	display: inline-block;
+	width: 169px;
+	margin:0 9px 36px 9px;
+	vertical-align: top;
+	border: 1px solid #ababab;
+	border-radius: 5px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+
+.some-work .somework-img {
+	width: 100%;
+	height: 120px;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.some-work .somework-link {
+	display: block;
+	background-color: #f2f2f2;
+	color: #727070;
+	font-size: 13px;
+	text-decoration: none;
+	width: 100%;
+	min-height: 100%;
+	margin-top: -5px;
+	padding: 8px;
+	font-family:  'open_sanssemibold';
+}
+
+.some-work .somework-description {
+	background-color: #fff;
+	color: #727070;
+	padding: 7px;
+	font-size: 12px;
+	min-height: 100%;
+	font-family: 'open_sanslight';
+}
+
+.some-work .add-text {
+	padding: 90px 18px 20px 18px;
+	position: relative;
+}
+
+.some-work .add-text:before {
+	content: '';
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 54px;
+    top: 20px;
+    border-radius: 50%;
+    background: url(../pict/polaroid.png) no-repeat 50%;
+    box-shadow: inset 2px 2px 4px 1px rgba(199,199,199,.75),
+ 1px 1px 7px 1px rgba(255,255,255,1);
+}
+
+/*hover-effect*/
+
+.some-work .link-wrap {
+	width: 100%;
+	position: absolute;
+	top: 50px;
+	transform: scale(0);
+	-webkit-transform: scale(0);
+	transition: .5s all ease-in-out;
+	-webkit-transition: .5s all ease-in-out;
+}
+
+.some-work:hover .link-wrap {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+.link-wrap .effect-link {
+	color: #fff;
+	text-decoration: none;
+	padding: 2px 3px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+}
+
+.some-work:hover .somework-img{
+	-moz-opacity: 0.20;
+	opacity:.20;
+	filter: alpha(opacity=20);
+}
+
+.some-work:hover .img-effect{
+	background-color: #526377;
+}
+
+/*hover-effect end*/
 
 
 /*FOOTER begin*/
