@@ -13,13 +13,13 @@
 	<meta name=keywords content="LoftSchool">
 	<meta name="author" content="Cherniakov Igor">
 	<!--CSS-->
-	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="font/stylesheet.css">
 	<link rel="stylesheet" href="styles/main.css">
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!--JS-->
 	<!--modernizr-->
-	<script src="scripts/modernizr.js"></script>
+	<script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
 <!--HEADER begin-->
@@ -67,7 +67,7 @@
 				<section class="box">
 					<h2 class="box-head">У вас интересный проект? Напишите мне</h2>
 					<div class="form-container clearfix">
-						<form action="#" method="get">
+						<form action="#" method="post">
 							<div class="inputs-wrap clearfix">
 								<div class="inset-wrap left">
 									<label for="name-send" class="form-label">Имя</label>
@@ -82,12 +82,22 @@
 								<label for="message" class="form-label">Сообщение</label>
 								<textarea name="message" class="textarea-inset" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
 							</div>
-							<label for="captcha-send" >Введите код, указанный а картинке</label>
-							<div class="captcha-wrap clearfix">
-								<img src="" alt="captcha" class="captcha-pict">
+							<label for="captcha-send" class="form-label">Введите код, указанный а картинке</label>
+							<div class="inputs-wrap clearfix">
+								<div class="inset-wrap left">
+									<img src="pict/captcha.jpg" alt="captcha" class="captcha-pict">
+								</div>	
 								<div class="inset-wrap right">
 									<input type="text" class="form-input captcha-send" id="captcha-send" placeholder="Введите код">
 								</div>
+							</div>
+							<div class="inputs-wrap clearfix btn-wrap">
+								<div class="inset-wrap left">
+									<input type="submit" name="submit" value="Отправить" class="submit-btn btn">
+								</div>
+								<div class="inset-wrap right">
+									<input type="reset" value="Очистить" class="reset-btn btn">
+								</div>	
 							</div>
 						</form>
 					</div>
@@ -102,5 +112,6 @@
 			<div class="copyright">&copy;2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</div>
 		</div>	
 	</footer>
+	<script src="scripts/script.js"></script>
 </body>
 </html>

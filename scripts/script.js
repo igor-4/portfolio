@@ -1,0 +1,1 @@
+console.log('file script.js connected');
