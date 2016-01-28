@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<!--Переключаем IE в последний режим-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--Корректное масштабирование на разных устройствах-->
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1">
+	<title>Сайт-портфолио Чернякова Игоря</title>
+	<!--SEO-->
+	<meta name="description" content="Сайт-визитка Чернякова Игоря">
+	<meta name=keywords content="LoftSchool">
+	<meta name="author" content="Cherniakov Igor">
+	<!--CSS-->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="font/stylesheet.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<!--JS-->
+	<!--modernizr-->
+	<script src="scripts/modernizr.js"></script>
+</head>
+<body>
+<!--HEADER begin-->
+	<header class="main-header">
+		<div class="header-wrap clearfix">
+		<!--LOGO part-->
+			<div class="header-logo">
+				<a href="#">
+					<img src="pict/logo.png" alt="loftschool" class="logo">
+				</a>
+				<h1 class="logo-text">Сайт-портфолио Чернякова Игоря</h1>
+			</div>
+			<!--SOCIAL part-->
+			<ul class="social clearfix">
+				<li><a href="#" class="icon fb">some facebook page</a></li>
+				<li><a href="https://vk.com/id6114539" class="icon vk">my VK profile</a></li>
+				<li><a href="#" class="icon tw">some tw page</a></li>
+				<li><a href="https://github.com/igor-4" class="icon git">my git-hub profile</a></li>
+			</ul>
+		</div>
+	</header>
+<!--CONTENT begin	-->
+	<main class="main-content page-row page-row-expanded">
+		<div class="content-wrap clearfix">
+		
+		<!--site info-->
+			<aside class='site-info'>
+				<nav class='navigation'>
+					<ul>
+						<li><a href='index.html' >Обо мне</a></li>
+						<li><a href='myworks.html' >Мои работы</a></li>
+						<li><a href='form-page.html' class="active">Обратная связь</a></li>
+					</ul>
+				</nav>
+				<ul class="contacts">
+					<li class='contacts-header'>Контакты</li>
+					<li><a href='mailto:rosamaha13@rambler.ru' class="decor mail">rosamaha13@rambler.ru</a></li>
+					<li><a href='tel:+79817476110' class="decor phone">+79817476110</a></li>
+					<li><a href='skype:x13freeman13x' class="decor skype">x13freeman13x</a></li>
+				</ul>
+			</aside>
+			
+			<!--main content-->
+			<div class='content'>
+				<section class="box">
+					<h2 class="box-head">У вас интересный проект? Напишите мне</h2>
+					<div class="form-container clearfix">
+						<form action="#" method="get">
+							<div class="inputs-wrap clearfix">
+								<div class="inset-wrap left">
+									<label for="name-send" class="form-label">Имя</label>
+									<input type="text" class="form-input" id="name-send" placeholder="Как к Вам обращаться">
+								</div>
+								<div class="inset-wrap right">
+									<label for="email-send" class="form-label">Email</label>
+									<input type="text" class="form-input" id="email-send" placeholder="Куда мне писать">
+								</div>
+							</div>
+							<div class="inputs-wrap">
+								<label for="message" class="form-label">Сообщение</label>
+								<textarea name="message" class="textarea-inset" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
+							</div>
+							<label for="captcha-send" >Введите код, указанный а картинке</label>
+							<div class="captcha-wrap clearfix">
+								<img src="" alt="captcha" class="captcha-pict">
+								<div class="inset-wrap right">
+									<input type="text" class="form-input captcha-send" id="captcha-send" placeholder="Введите код">
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
+<!--FOOTER begin	-->
+	<footer class="main-footer">
+		<div class="footer-container clearfix">
+			<div class="wrap-lock"><a href="#" class="lock">Вход</a></div>
+			<div class="copyright">&copy;2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</div>
+		</div>	
+	</footer>
+</body>
+</html>

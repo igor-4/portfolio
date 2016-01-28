@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/igor-4/portfolio#readme",
   "devDependencies": {
+    "browser-sync": "^2.11.1",
     "gulp": "^3.9.0"
   }
 }
