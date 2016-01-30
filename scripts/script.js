@@ -1,1 +1,1 @@
-console.log('file script.js connected');
+$('input, textarea').placeholder();

@@ -27,17 +27,17 @@
 		<div class="header-wrap clearfix">
 		<!--LOGO part-->
 			<div class="header-logo">
-				<a href="#">
+				<a href="#" class="header-link">
 					<img src="pict/logo.png" alt="loftschool" class="logo">
 				</a>
 				<h1 class="logo-text">Сайт-портфолио Чернякова Игоря</h1>
 			</div>
 			<!--SOCIAL part-->
 			<ul class="social clearfix">
-				<li><a href="#" class="icon fb">some facebook page</a></li>
-				<li><a href="https://vk.com/id6114539" class="icon vk">my VK profile</a></li>
-				<li><a href="#" class="icon tw">some tw page</a></li>
-				<li><a href="https://github.com/igor-4" class="icon git">my git-hub profile</a></li>
+				<li class="social-element"><a href="#" class="icon fb">some facebook page</a></li>
+				<li class="social-element"><a href="https://vk.com/id6114539" class="icon vk">my VK profile</a></li>
+				<li class="social-element"><a href="#" class="icon tw">some tw page</a></li>
+				<li class="social-element"><a href="https://github.com/igor-4" class="icon git">my git-hub profile</a></li>
 			</ul>
 		</div>
 	</header>
@@ -47,18 +47,18 @@
 		
 		<!--site info-->
 			<aside class='site-info'>
-				<nav class='navigation'>
-					<ul>
-						<li><a href='index.html' >Обо мне</a></li>
-						<li><a href='myworks.html' >Мои работы</a></li>
-						<li><a href='form-page.html' class="active">Обратная связь</a></li>
+				<nav class="site-navigation">
+					<ul class='navigation-list'>
+						<li class="navigation-element"><a class="navigation-link" href='index.html'>Обо мне</a></li>
+						<li class="navigation-element"><a class="navigation-link" href='myworks.html' >Мои работы</a></li>
+						<li class="navigation-element"><a class="navigation-link  active-page" href='form-page.html' >Обратная связь</a></li>
 					</ul>
 				</nav>
-				<ul class="contacts">
-					<li class='contacts-header'>Контакты</li>
-					<li><a href='mailto:rosamaha13@rambler.ru' class="decor mail">rosamaha13@rambler.ru</a></li>
-					<li><a href='tel:+79817476110' class="decor phone">+79817476110</a></li>
-					<li><a href='skype:x13freeman13x' class="decor skype">x13freeman13x</a></li>
+				<div class="contact-header"><span class="contact-header-text">Контакты</span></div>
+				<ul class="contacts-list">
+					<li class="contact-element"><a class="user-contact mail" href='mailto:rosamaha13@rambler.ru'>rosamaha13@rambler.ru</a></li>
+					<li class="contact-element"><a class="user-contact phone" href='tel:+79817476110'>+79817476110</a></li>
+					<li class="contact-element"><a class="user-contact skype" href='skype:x13freeman13x'>x13freeman13x</a></li>
 				</ul>
 			</aside>
 			
@@ -112,6 +112,8 @@
 			<div class="copyright">&copy;2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</div>
 		</div>	
 	</footer>
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
 	<script src="scripts/script.js"></script>
 </body>
 </html>
