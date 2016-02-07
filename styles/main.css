@@ -1003,3 +1003,173 @@ textarea:focus {
 	font-family: 'open_sanslight';
 	padding: 3px 0;
 }
+
+
+
+/*-------------------*/
+/*+++++++++++++++++++++*/
+/*0000000000000000000000000000*/
+/*-------------форма добавления нового проекта-------------------*/
+
+
+.popup-outer {
+  width: 100%;
+  border: 2px solid rgb(17,17,17);
+  border-radius: 5px;
+  background-color: rgba(143,141,127,.3);
+}
+
+
+
+.popup-innerwrap {
+  border: 1px solid rgb(191,191,191);
+  border-radius: 5px;
+  background-color: rgb(241,239,238);
+  padding: 25px 20px;
+  position: relative;
+  margin: 50px auto;
+  width: 364px;
+}
+
+.popup-innerwrap:after {
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  text-align: center;
+  content: "";
+  height: 14px;
+  width: 15px;
+  display: block;
+  background: url(../pict/exit.png) no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup-innerwrap:before {
+  color: rgb(248,247,246);
+  content: "Добавление проекта";
+  display: block;
+  font-size: 12px;
+  font-family: 'open_sanslight';
+  position: absolute;
+  left: 22px;
+  top: -22px;
+}
+
+.popup-element {
+  margin-bottom: 8px;
+}
+
+.lastPopup-element {
+  margin-bottom: 11px;
+}
+
+.popup-label {
+  display: block;
+  position: relative;
+  font-family: 'open_sansregular';
+  font-size: 14px;
+  width: 100%;
+}
+
+.popup-input-name {
+  border-radius: 5px;
+  border: 1px solid rgb(191,191,191);
+  color: rgb(199,198,198);
+  display: block;
+  min-height: 45px;
+  margin-top: 8px;
+  padding: 12px 9px;
+  font-size: 12px;
+  font-family: 'open_sanslight';
+  width: 100%;
+  box-shadow: inset 0 1px 10px 1px rgba(114, 112, 112, .20);
+  background: rgb(251, 252, 253);
+  background: -webkit-linear-gradient(rgba(251, 252, 253, 1) 0%, rgba(250, 251, 252, 1) 21%, rgba(244, 243, 243, 1) 100%);
+  background: linear-gradient(rgba(251, 252, 253, 1) 0%, rgba(250, 251, 252, 1) 21%, rgba(244, 243, 243, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
+}
+
+.popup-input-file {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.popup-addfile {
+  border-radius: 5px;
+  border: 1px solid rgb(191,191,191);
+  color: rgb(199,198,198);
+  font-size: 12px;
+  margin-top: 8px;
+  min-height: 45px;
+  padding: 12px 9px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: inset 0 1px 10px 1px rgba(114, 112, 112, .20);
+  background: rgb(251, 252, 253);
+  background: -webkit-linear-gradient(rgba(251, 252, 253, 1) 0%, rgba(250, 251, 252, 1) 21%, rgba(244, 243, 243, 1) 100%);
+  background: linear-gradient(rgba(251, 252, 253, 1) 0%, rgba(250, 251, 252, 1) 21%, rgba(244, 243, 243, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
+}
+
+.popup-addfile:before {
+  content: "";
+  cursor: pointer;
+  width: 54px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 1px solid rgb(191,191,191);
+  box-shadow: inset 0 1px 10px 1px rgba(114, 112, 112, .20);
+  background: #fcfcfc; /* Old browsers */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #fcfcfc 0%,#e9e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #fcfcfc 0%,#e9e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#e9e8e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+.popup-addfile:after {
+  content: "";
+  cursor: pointer;
+  width: 26px;
+  height: 18px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: url(../pict/cloud.png) no-repeat;
+}
+
+.popup-about{
+  border: 1px solid rgb(191,191,191);
+  border-radius: 5px;
+  color: rgb(199,198,198);
+  display: block;
+  margin-top: 8px;
+  font-family: 'open_sanslight';
+  font-size: 12px;
+  resize: none;
+  padding: 12px 9px;
+  height: 115px;
+  width: 100%;
+  box-shadow: inset 0 2px 5px 1px rgba(114, 112, 112, .20), 1px 0 0 0 rgba(255, 255, 255, .35);
+  background: rgb(251, 252, 253);
+  background: -webkit-linear-gradient(top, rgba(251, 252, 253, 1) 0%, rgba(250, 251, 252, 1) 21%, rgba(244, 243, 243, 1) 100%);
+  background: linear-gradient(to bottom, rgba(251, 252, 253, 1) 0%, rgba(250, 251, 252, 1) 21%, rgba(244, 243, 243, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fbfcfd', endColorstr='#f4f3f3', GradientType=0);
+}
+
+.popup-button {
+  text-align: center;
+}
+
+.popup-input-name:focus,
+.popup-about:focus {
+  box-shadow: inset 0 0 3px 1px rgb(180, 105, 72);
+  color: rgb(145, 122, 122);
+  font-weight: bold;
+}
