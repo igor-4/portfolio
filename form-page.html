@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="font/stylesheet.css">
 	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
+    <!--favicon-->
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!--JS-->
 	<!--modernizr-->
@@ -67,20 +69,20 @@
 				<section class="box">
 					<h2 class="box-head">У вас интересный проект? Напишите мне</h2>
 					<div class="form-container clearfix">
-						<form action="#" method="post">
+						<form id="contact-me" name="contact-me" action="#" method="post">
 							<div class="inputs-wrap clearfix">
 								<div class="inset-wrap left">
 									<label for="name-send" class="form-label">Имя</label>
-									<input type="text" class="form-input" id="name-send" placeholder="Как к Вам обращаться">
+									<input qtip-position="left" qtip-content="Ваше имя" type="text" class="form-input" id="name-send" placeholder="Как к Вам обращаться">
 								</div>
 								<div class="inset-wrap right">
 									<label for="email-send" class="form-label">Email</label>
-									<input type="text" class="form-input" id="email-send" placeholder="Куда мне писать">
+									<input qtip-position="right" qtip-content="Ваш email" type="text" class="form-input" id="email-send" placeholder="Куда мне писать">
 								</div>
 							</div>
 							<div class="inputs-wrap">
 								<label for="message" class="form-label">Сообщение</label>
-								<textarea name="message" class="textarea-inset" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
+								<textarea qtip-position="right" qtip-content="О себе" name="message" class="textarea-inset" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
 							</div>
 							<label for="captcha-send" class="form-label">Введите код, указанный а картинке</label>
 							<div class="inputs-wrap clearfix">
@@ -88,7 +90,7 @@
 									<img src="pict/captcha.jpg" alt="captcha" class="captcha-pict">
 								</div>	
 								<div class="inset-wrap right">
-									<input type="text" class="form-input captcha-send" id="captcha-send" placeholder="Введите код">
+									<input qtip-content="каптча" qtip-position="right" type="text" class="form-input captcha-send" id="captcha-send" placeholder="Введите код">
 								</div>
 							</div>
 							<div class="inputs-wrap clearfix btn-wrap">
@@ -114,6 +116,9 @@
 	</footer>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/jq-placeholder.js"></script>
+	<script src="bower_components/qtip2/jquery.qtip.js"></script>
+	<script src="scripts/validation.js"></script>
+	<script src="scripts/sendme.js"></script>
 </body>
 </html>

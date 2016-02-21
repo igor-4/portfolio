@@ -147,6 +147,7 @@ body {
 .main-content {
 	background: #ddebae url('../pict/main-bg.jpg') no-repeat center center;
 	background-size: cover;
+    position: relative;
 }
 
 .content-wrap {
@@ -633,6 +634,7 @@ body {
 	overflow: hidden;
 	text-align: center;
 	position: relative;
+    box-shadow: -1px 3px 10px 0px rgba(20,20,20,.3);
 }
 
 .main-link {
@@ -646,6 +648,10 @@ body {
 	margin-top: -5px;
 	padding: 8px;
 	font-family: 'open_sanssemibold';
+}
+
+.element-work:hover .main-link {
+  text-decoration: underline;
 }
 
 .img-wrapper {
@@ -673,8 +679,8 @@ body {
 	text-decoration: none;
 	-webkit-transform: scale(0);
 	transform: scale(0);
-	-webkit-transition: 0.4s all ease-in;
-	transition: 0.4s all ease-in;
+	-webkit-transition: 0.2s all ease-in;
+	transition: 0.2s all ease-in;
 }
 
 .no-csstransitions .inner-link {
@@ -690,10 +696,10 @@ body {
 	border: 1px solid #fff;
 	border-radius: 5px;
 	padding: 2px 6px;
-	-webkit-transform: scale(0.8);
-	transform: scale(0.8);
-	-webkit-transition: 0.3s all ease-in;
-	transition: 0.3s all ease-in;
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	-webkit-transition: 0.1s all ease-in;
+	transition: 0.1s all ease-in;
 }
 
 .inner-link-text:hover {
@@ -736,7 +742,7 @@ body {
 
 .createnew-hover {
 	position: absolute;
-	display: block;
+	display: none;
 	width: 100%;
 	height: 100%;
 	border: 3px solid rgb(240, 230, 240);
@@ -748,20 +754,11 @@ body {
 	color: rgb(240, 230, 240);
 	text-decoration: none;
 	font-family: 'open_sanslight';
-	-webkit-transform: scale(0);
-	transform: scale(0);
-	-webkit-transition: 0.4s all ease-in;
-	transition: 0.4s all ease-in;
 }
 
-.no-csstransitions .createnew-hover {
-	display: none;
-}
 
 .element-work:hover .createnew-hover {
 	display: block;
-	-webkit-transform: scale(1);
-	transform: scale(1);
 }
 
 
@@ -840,8 +837,7 @@ body {
 .captcha-send:focus,
 .textarea-inset:focus,
 .form-input:focus {
-	box-shadow: inset 0 0 3px 1px rgb(180, 105, 72);
-	color: rgb(145, 122, 122);
+	color: rgb(102, 120, 127);
 	font-weight: bold;
 }
 
@@ -1014,12 +1010,32 @@ textarea:focus {
 
 .popup-outer {
   width: 100%;
-  border: 2px solid rgb(17,17,17);
-  border-radius: 5px;
-  background-color: rgba(143,141,127,.3);
+  height: 100%;
+  background-color: rgba(17,17,17,.7);
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
 }
 
+.popup-center-outer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+.popup-center-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 500px;
+  width: 364px;
+  display: none;
+}
 
 .popup-innerwrap {
   border: 1px solid rgb(191,191,191);
@@ -1027,11 +1043,10 @@ textarea:focus {
   background-color: rgb(241,239,238);
   padding: 25px 20px;
   position: relative;
-  margin: 50px auto;
   width: 364px;
 }
 
-.popup-innerwrap:after {
+.exit-popup {
   position: absolute;
   right: 3px;
   top: 5px;
@@ -1058,6 +1073,7 @@ textarea:focus {
 
 .popup-element {
   margin-bottom: 8px;
+  position: relative;
 }
 
 .lastPopup-element {
@@ -1169,7 +1185,43 @@ textarea:focus {
 
 .popup-input-name:focus,
 .popup-about:focus {
-  box-shadow: inset 0 0 3px 1px rgb(180, 105, 72);
-  color: rgb(145, 122, 122);
   font-weight: bold;
+  color: rgb(73, 81, 71);
 }
+
+
+/*ERROR for JQ popUp*/
+
+.error{
+  background: rgb(232, 183, 183);
+  box-shadow: 0 0 7px 1px rgb(234, 79, 79);
+  border-color: rgb(247, 9, 25);
+  color: rgb(247, 9, 25);
+}
+
+.error-mes {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  display: none;
+}
+
+.success {
+  box-shadow: inset 0 0 15px 1px rgb(78, 124, 71);
+  border: 1px solid rgb(78, 124, 71);
+  background-color: rgb(145, 242, 182);
+  color: rgb(78, 124, 71);
+}
+
+.fail {
+  border: 1px solid rgb(109, 12, 20);
+  background-color: rgb(244, 131, 100);
+  box-shadow: inset 0 0 15px 1px rgba(109, 12, 20,.3);
+  color: rgb(109, 12, 20);
+}
+
+/*end*/
+

@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 	<link rel="stylesheet" href="font/stylesheet.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="bower_components/qtip2/jquery.qtip.css">
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<!--JS-->
 	<!--modernizr-->
@@ -114,18 +115,23 @@ Come to us, if you love cars</p>
 						</ul>
 					</div>
 				</section>
-				
-				<!--POPUP begin-->
+			</div>
+		</div>
+		<!--POPUP begin-->
 				<div class="popup-outer">
-       
+                   <div class="popup-center-outer">
+                   <div class="popup-center-inner">
                     <div class="popup-innerwrap">
+                      <div class="exit-popup"></div>
                     <!--popup FORM begin-->
-				      <form class="popup-form" action="">
+				      <form id="popup-form" class="popup-form" name="popup-form" method="POST" action="">
                     <!--popup element PROJECT NAME-->
 				        <div class="popup-element">
+                        <div class="error-mes success"></div>
+                        <div class="error-mes fail"></div>
 				          <label class="popup-label" for="popup-name">
                             Название проекта
-				            <input name="project-name" class="popup-input-name" type="text" id="popup-name" placeholder="Введите название">
+				            <input qtip-position="left" qtip-content="Введите имя" name="project-name" class="popup-input-name" type="text" id="popup-name" placeholder="Введите название">
 				          </label>
 				        </div>
 				        <!--end-->
@@ -134,7 +140,7 @@ Come to us, if you love cars</p>
 				          <label class="popup-label" for="popup-file">
                             Картинка проекта
 				            <input name="project-file" class="popup-input-file" type="file" id="popup-file">
-				            <div class="popup-addfile">Загрузите изображение</div>
+				            <div qtip-content="Загрузите изображение" qtip-position="left" class="popup-addfile">Загрузите изображение</div>
 				          </label>
 				        </div>
 				        <!--end-->
@@ -142,14 +148,14 @@ Come to us, if you love cars</p>
 				        <div class="popup-element">
 				          <label class="popup-label" for="popup-url">
                             URL проекта
-				            <input name="project-url" class="popup-input-name" type="text" id="popup-url" placeholder="Добавьте ссылку">
+				            <input qtip-position="left" qtip-content="Введите имя" name="project-url" class="popup-input-name" type="text" id="popup-url" placeholder="Добавьте ссылку">
 				          </label>
 				        </div>
 				        <!--end-->
 				        <div class="popup-element lastPopup-element">
 				          <label class="popup-label" for="popup-about">
                             Описание
-				            <textarea class="popup-about" name="about-newProject" id="popup-about" placeholder="Пару слов о Вашем проекте"></textarea>
+				            <textarea qtip-position="left" qtip-content="Введите имя" class="popup-about" name="about-newProject" id="popup-about" placeholder="Пару слов о Вашем проекте"></textarea>
 				          </label>
 				        </div>
 				        <div class="popup-button">
@@ -158,12 +164,11 @@ Come to us, if you love cars</p>
 				      </form>
                    <!--popup FORM end-->
                     </div> 
-				  
+                  </div>
+                  </div>
 				  
 				</div>
 				<!--POPUP end-->
-			</div>
-		</div>
 	</main>
 <!--FOOTER begin	-->
 	<footer class="main-footer">
@@ -174,6 +179,9 @@ Come to us, if you love cars</p>
 	</footer>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/jq-placeholder.js"></script>
+	<script src="bower_components/qtip2/jquery.qtip.js"></script>
+	<script src="scripts/validation.js"></script>
+	<script src="scripts/myworks.js"></script>
 </body>
 </html>
